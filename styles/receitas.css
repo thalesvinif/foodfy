@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+header {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    text-align: center;
+    
+}
+#pagina-atual {
+    font-weight: bold;
+}
+nav {
+    margin-left: 124px;
+    padding-top: 5px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*=== RECEITAS ===*/
+#receitas {
+}
+
+#receitas h2 {
+    font-size: 24px;
+    margin: 50px 0 20px 5px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 300px;
+    max-height: 140px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 20px 0 0 5px;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777777;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 30px 5px;
+    
+}
+
+/*=== FOOTER ===*/
+footer {
+    background-color: #EEEEEE;
+    height: 62px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px 0;
+}
+
+/*=== MODAL ===*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    margin: 25vh auto;
+    border-radius: 16px;
+    position: relative;
+}
+
+.modal .fechar {
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+    position: absolute;
+    left: 48%;
+    bottom: 30px;
+}
+
+.modal-content img {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.modal-content h3 {
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #111111;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #777777;
+    margin-top: 5px;
+}
+
+/*=== MODAL ATIVO ===*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
